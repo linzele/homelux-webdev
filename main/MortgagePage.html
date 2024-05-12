@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortgage Calculator</title>
+<link rel="stylesheet" href="assets/css/Mortgage.css">
+</head>
+<body>
+
+
+<form id="mortgageForm">
+    <h2>Mortgage Calculator</h2>
+    <label for="purchasePrice">Purchase Price ($):</label>
+    <input type="text" id="purchasePrice" required><br>
+    <label for="downPayment">Down Payment ($):</label>
+    <input type="text" id="downPayment" required><br>
+    <label for="interestRate">Interest Rate (%):</label>
+    <input type="text" id="interestRate" required><br>
+    <label for="loanTerm">Loan Term (years):</label>
+    <input type="text" id="loanTerm" required><br>
+    <input type="submit" value="Calculate">
+</form>
+
+<div id="results"></div>
+
+<script src="assets/js/Mortgage.js"></script>
+
+</body>
+</html>
