@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLux - User Profile Create</title>
+    <link rel="stylesheet" href="userprofile.css">
+</head>
+<body>
+    <div class="wrapper2">
+        <span class="icon-close2" id="closeIcon"><ion-icon name="close-outline"></ion-icon></span>
+
+        <div class="form-box register">
+            <h2>Create Profiles</h2>
+            <form id="permissionsForm" action="#">
+                <div class="input-box">
+                    <input type = "text" id="roleName" required>
+                    <label>Input Name Of New Role</label>
+                </div>
+                <div class="permissions">
+                    <label><input type="checkbox" name="Create"> Create</label>
+                </div>
+                <div class="permissions">
+                    <label><input type="checkbox" name="View"> View </label>
+                </div>
+                <div class="permissions">
+                    <label><input type="checkbox" name="Update"> Update </label>
+                </div>
+                <div class="permissions">
+                    <label><input type="checkbox" name="Suspend"> Suspend </label>
+                </div>
+                <div class="permissions">
+                    <label><input type="checkbox" name="Search"> Search </label>
+                </div>
+
+                <div class="login-register">
+                    <button class="btn" onclick="create()">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Function to show permissions based on selected user profile
+        // function showPermissions() {
+        //     var userProfile = document.getElementById("userProfileSelect").value;
+        //     var savedPermissions = localStorage.getItem(userProfile + "Permissions");
+        //     if (savedPermissions) {
+        //         savedPermissions = savedPermissions.split(",");
+        //         var permissionCheckboxes = document.querySelectorAll("#permissionsForm input[type='checkbox']");
+        //         permissionCheckboxes.forEach(function(checkbox) {
+        //             checkbox.checked = savedPermissions.includes(checkbox.name);
+        //         });
+        //     } else {
+        //         // If no saved permissions, clear all checkboxes
+        //         document.querySelectorAll("#permissionsForm input[type='checkbox']").forEach(function(checkbox) {
+        //             checkbox.checked = false;
+        //         });
+        //     }
+        // }
+
+        // Function to save changes
+        // function saveChanges() {
+        //     var userProfile = document.getElementById("userProfileSelect").value;
+        //     var checkedPermissions = [];
+        //     document.querySelectorAll("#permissionsForm input[type='checkbox']:checked").forEach(function(checkedCheckbox) {
+        //         checkedPermissions.push(checkedCheckbox.name);
+        //     });
+        //     localStorage.setItem(userProfile + "Permissions", checkedPermissions.join(","));
+        //     alert("Changes saved successfully!");
+        // }
+
+        // Show permissions on page load
+        // showPermissions();
+    </script>
+    <script src="userprofile.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
