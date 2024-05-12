@@ -1,0 +1,93 @@
+/* Global reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/images/background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Form container */
+form {
+  height: 450px;
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #162938;
+}
+
+/* Results styles */
+#results {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Result item styles */
+#results h2,
+#results p {
+  color: #fff;
+}
+
+/* Adjust the position of results */
+#results {
+  position: absolute;
+  width: 400px;
+  bottom: 50px;
+  left: calc(50% - 200px);
+}

@@ -1,0 +1,219 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLux - Find your dream house</title>
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="SellerReviewREA.css">
+
+    <!-- 
+        - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    </head>
+
+    <body>
+
+    <!-- 
+        - #HEADER
+    -->
+
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+        <div class="container">
+
+            <div class="wrapper">
+
+            <button class="header-top-btn login-btn">Back Home</button>
+            <button class="header-top-btn login-btn">Log Out</button>
+
+            </div>
+
+        </div>
+        </div>
+
+        <div class="header-bottom">
+        <div class="container">
+
+            <a href="#" class="logo">
+            <img src="../assets/images/logo.jpg" alt="Homelux logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+            <div class="navbar-top">
+
+                <a href="#" class="logo">
+                <img src="../assets/images/logo.jpg" alt="Homeverse logo">
+                </a>
+
+                <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="navbar-bottom">
+                <ul class="navbar-list">
+
+                <li class="dropdown">
+                    <a href="#about" class="navbar-link" data-nav-link>View Listing</a>
+                    <!-- will direct to same page as search (both new & old properties)-->
+
+                </li>
+            
+                <li class="dropdown">
+                    <a href="#about" class="navbar-link" data-nav-link>View Saved Listing</a>
+                    <!-- will direct to same page as cart-->
+                </li>
+                <li class="dropdown">
+                    <a href="#about" class="navbar-link" data-nav-link>Feedback</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="btn review-btn">Review REA</a>
+                        <a href="#" class="btn rate-btn">Rate REA</a>
+
+                    </div>
+                </li>
+                
+                </ul>
+            </div>
+
+            </nav>
+
+            <div class="header-bottom-actions">
+
+            <button class="header-bottom-actions-btn login-btn" aria-label="Search" href="#">
+                <ion-icon name="search-outline"></ion-icon>
+
+                <span>Search</span>
+            </button>
+
+            <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                <ion-icon name="menu-outline"></ion-icon>
+    
+                <span>Menu</span>
+            </button>
+
+            </div>
+
+        </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+    
+    
+            <!-- #REVIEW FORM -->
+    
+            <section class="review-form">
+                <div class="container2">
+    
+                    <h2>Submit a Review</h2>
+                    <form action="#" method="post" id="reviewForm">
+                        <div class="input-box">
+                            <label for="username">Name:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="REA">Real Estate Agent's Name:</label>
+                            <input type="REA" id="REA" name="REA" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="review">Your Review:</label>
+                            <textarea id="review" name="review" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Submit Review</button>
+                    </form>
+    
+                </div>
+            </section>
+    
+        </article>
+    </main>
+    
+
+    <!-- 
+        - custom js link
+    -->
+    <script src="SellerReviewREA.js"></script>
+
+    <!-- 
+        - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+    <script>
+        function clickAcc (option) {
+            console.log(option, " Accounts button clicked!");
+
+        }
+    </script>
+    <script>
+
+// var createBtn = document.querySelector('.btn.create-btn');
+
+//         // direct to create page (UP)
+// // Add an event listener for the 'click' event
+// createBtn.addEventListener('click', function() {
+//     // Your event handling code here
+//     console.log('Create button clicked!');
+//     // Redirect to the user profile create page
+//     window.location.href = './userProfileCreate.html';
+// })
+
+// var suspendBtn = document.querySelector('.btn.suspend-btn');
+
+//         // direct to suspend page (UP)
+//     // Add an event listener for the 'click' event
+//     suspendBtn.addEventListener('click', function() {
+//         // Your event handling code here
+//         console.log('Suspend button clicked!');
+//         // Redirect to the user profile suspend page
+//         window.location.href = './userProfileSuspend.html';
+//     });
+
+//     var updateBtn = document.querySelector(".update-btn");
+//         updateBtn.addEventListener("click", function() {
+//             // Logic for updating item
+//             console.log("Update button clicked");
+//             // direct to update page (UP)
+
+//             window.location.href = './userProfileUpdate.html';
+
+//         });
+
+    var logoutBtn = document.querySelector('.header-top-btn');
+
+    // back to home page
+    // Add an event listener for the 'click' event
+    logoutBtn.addEventListener('click', function() {
+        // Your event handling code here
+        console.log('Logout button clicked!');
+        // Redirect to the login page
+        window.location.href = '../MainPage/index.html';
+});
+    </script>
+
+    </html>
