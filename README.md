@@ -4,6 +4,8 @@
 
 Homelux is a modern web application designed to streamline the process of browsing and discovering real estate properties. Our platform provides an intuitive interface for users to explore available properties and connect with real estate opportunities.
 
+**inserting video demo soon*
+
 ## ✨ Features
 
 - Modern and responsive user interface
